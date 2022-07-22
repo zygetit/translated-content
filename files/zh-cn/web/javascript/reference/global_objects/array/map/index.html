@@ -50,7 +50,7 @@ translation_of: Web/JavaScript/Reference/Global_Objects/Array/map
 
 <p>因为<code>map</code>生成一个新数组，当你不打算使用返回的新数组却使用<code>map</code>是违背设计初衷的，请用<code><a href="/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">forEach</a></code>或者<code><a href="/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of">for-of</a></code>替代。你不该使用<code>map</code>: A) 你不打算使用返回的新数组，或/且 B) 你没有从回调函数中返回值。</p>
 
-<p><code>callback</code> 函数会被自动传入三个参数：数组元素，元素索引，原数组本身。</p>
+<p><code>callback</code> 函数会被自动传入三个参数：数组元素，元素索引，原数组本身，无论你是否使用了这三个参数。</p>
 
 <p>如果 <code>thisArg</code> 参数提供给<code>map</code>，则会被用作回调函数的<code>this</code>值。否则 {{jsxref("undefined")}} 会被用作回调函数的<code>this</code>值。<code>this</code>的值最终相对于<code>callback</code>函数的可观察性是依据<a href="/en-US/docs/Web/JavaScript/Reference/Operators/this">the usual rules for determining the this seen by a function</a>决定的</p>
 
